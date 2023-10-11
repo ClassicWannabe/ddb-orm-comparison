@@ -1,0 +1,69 @@
+{
+  "buildingInfo": {
+    "address": "Aktau, Kazakhstan",
+    "entityType": "Building",
+    "name": "Discovery",
+    "id": "b-1",
+    "yearBuilt": 1997
+  },
+  "buildingFloors": {
+    "items": [
+      {
+        "entityType": "Floor",
+        "floorNumber": 1,
+        "id": "f-1",
+        "buildingId": "b-1"
+      },
+      {
+        "entityType": "Floor",
+        "floorNumber": 2,
+        "id": "f-2",
+        "buildingId": "b-1"
+      }
+    ]
+  },
+  "floorRooms": {
+    "items": [
+      {
+        "floorId": "f-1",
+        "entityType": "Room",
+        "name": "Server room",
+        "id": "r-1",
+        "buildingId": "b-1"
+      }
+    ]
+  },
+  "entityItems": {
+    "items": [
+      {
+        "floorId": "f-1",
+        "entityType": "Room",
+        "name": "Server room",
+        "id": "r-1",
+        "buildingId": "b-1"
+      },
+      {
+        "floorId": "f-2",
+        "entityType": "Room",
+        "name": "Kitchen",
+        "id": "r-2",
+        "buildingId": "b-1"
+      }
+    ]
+  },
+  "latestSensorMeasurement": {
+    "items": [
+      {
+        "date": "2023-09-25",
+        "entityType": "Measurement",
+        "time": "23:31:00",
+        "value": 23,
+        "sensorId": "s-1"
+      }
+    ],
+    "cursor": {
+      "sk": "time#23:31:00",
+      "pk": "sensor#s-1#measurement#2023-09-25"
+    }
+  }
+}

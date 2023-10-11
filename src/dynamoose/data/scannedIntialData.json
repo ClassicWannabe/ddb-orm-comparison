@@ -1,0 +1,97 @@
+[
+  {
+    "unitOfMeasure": "millibar",
+    "entityType": "Sensor",
+    "sensorType": "pressure",
+    "sk": "info",
+    "id": "s-3",
+    "buildingId": "b-1",
+    "sensorId1": "s-3",
+    "floorId": "f-1",
+    "sensorId2": "s-3",
+    "roomId": "r-1",
+    "sensorId3": "s-3"
+  },
+  {
+    "pk": {
+      "date": "2023-09-25",
+      "sensorId": "s-1"
+    },
+    "value": 25,
+    "entityType": "Measurement",
+    "time": "23:30:00"
+  },
+  {
+    "pk": {
+      "date": "2023-09-25",
+      "sensorId": "s-1"
+    },
+    "value": 23,
+    "entityType": "Measurement",
+    "time": "23:31:00"
+  },
+  {
+    "unitOfMeasure": "celsius",
+    "entityType": "Sensor",
+    "sensorType": "temperature",
+    "sk": "info",
+    "id": "s-2",
+    "buildingId": "b-1",
+    "sensorId1": "s-2",
+    "floorId": "f-2",
+    "sensorId2": "s-2",
+    "roomId": "r-2",
+    "sensorId3": "s-2"
+  },
+  {
+    "unitOfMeasure": "celsius",
+    "entityType": "Sensor",
+    "sensorType": "temperature",
+    "sk": "info",
+    "id": "s-1",
+    "buildingId": "b-1",
+    "sensorId1": "s-1",
+    "floorId": "f-1",
+    "sensorId2": "s-1",
+    "roomId": "r-1",
+    "sensorId3": "s-1"
+  },
+  {
+    "floorNumber": 1,
+    "entityType": "Floor",
+    "buildingId": "b-1",
+    "id": "f-1"
+  },
+  {
+    "floorNumber": 2,
+    "entityType": "Floor",
+    "buildingId": "b-1",
+    "id": "f-2"
+  },
+  {
+    "sk": {
+      "roomId": "r-1",
+      "floorId": "f-1"
+    },
+    "name": "Server room",
+    "entityType": "Room",
+    "buildingId": "b-1"
+  },
+  {
+    "sk": {
+      "roomId": "r-2",
+      "floorId": "f-2"
+    },
+    "name": "Kitchen",
+    "entityType": "Room",
+    "buildingId": "b-1"
+  },
+  {
+    "name": "Discovery",
+    "sk": "info",
+    "address": "Aktau, Kazakhstan",
+    "yearBuilt": 1997,
+    "entityType": "Building",
+    "id": "b-1"
+  }
+]

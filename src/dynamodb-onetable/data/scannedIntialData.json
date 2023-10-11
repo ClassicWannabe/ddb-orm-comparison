@@ -1,0 +1,328 @@
+[
+  {
+    "unitOfMeasure": {
+      "S": "millibar"
+    },
+    "entityType": {
+      "S": "Sensor"
+    },
+    "GSI2-sk": {
+      "S": "sensor#s-3"
+    },
+    "_type": {
+      "S": "Sensor"
+    },
+    "GSI1-sk": {
+      "S": "sensor#s-3"
+    },
+    "GSI2-pk": {
+      "S": "floor#f-1"
+    },
+    "GSI3-pk": {
+      "S": "room#r-1"
+    },
+    "GSI1-pk": {
+      "S": "building#b-1"
+    },
+    "roomId": {
+      "S": "r-1"
+    },
+    "buildingId": {
+      "S": "b-1"
+    },
+    "floorId": {
+      "S": "f-1"
+    },
+    "GSI3-sk": {
+      "S": "sensor#s-3"
+    },
+    "sensorType": {
+      "S": "pressure"
+    },
+    "sk": {
+      "S": "info"
+    },
+    "pk": {
+      "S": "sensor#s-3"
+    },
+    "id": {
+      "S": "s-3"
+    }
+  },
+  {
+    "date": {
+      "S": "2023-09-25"
+    },
+    "entityType": {
+      "S": "Measurement"
+    },
+    "sk": {
+      "S": "time#23:30:00"
+    },
+    "_type": {
+      "S": "Measurement"
+    },
+    "pk": {
+      "S": "sensor#s-1#measurement#2023-09-25"
+    },
+    "time": {
+      "S": "23:30:00"
+    },
+    "value": {
+      "N": "25"
+    },
+    "sensorId": {
+      "S": "s-1"
+    }
+  },
+  {
+    "date": {
+      "S": "2023-09-25"
+    },
+    "entityType": {
+      "S": "Measurement"
+    },
+    "sk": {
+      "S": "time#23:31:00"
+    },
+    "_type": {
+      "S": "Measurement"
+    },
+    "pk": {
+      "S": "sensor#s-1#measurement#2023-09-25"
+    },
+    "time": {
+      "S": "23:31:00"
+    },
+    "value": {
+      "N": "23"
+    },
+    "sensorId": {
+      "S": "s-1"
+    }
+  },
+  {
+    "unitOfMeasure": {
+      "S": "celsius"
+    },
+    "entityType": {
+      "S": "Sensor"
+    },
+    "GSI2-sk": {
+      "S": "sensor#s-2"
+    },
+    "_type": {
+      "S": "Sensor"
+    },
+    "GSI1-sk": {
+      "S": "sensor#s-2"
+    },
+    "GSI2-pk": {
+      "S": "floor#f-2"
+    },
+    "GSI3-pk": {
+      "S": "room#r-2"
+    },
+    "GSI1-pk": {
+      "S": "building#b-1"
+    },
+    "roomId": {
+      "S": "r-2"
+    },
+    "buildingId": {
+      "S": "b-1"
+    },
+    "floorId": {
+      "S": "f-2"
+    },
+    "GSI3-sk": {
+      "S": "sensor#s-2"
+    },
+    "sensorType": {
+      "S": "temperature"
+    },
+    "sk": {
+      "S": "info"
+    },
+    "pk": {
+      "S": "sensor#s-2"
+    },
+    "id": {
+      "S": "s-2"
+    }
+  },
+  {
+    "unitOfMeasure": {
+      "S": "celsius"
+    },
+    "entityType": {
+      "S": "Sensor"
+    },
+    "GSI2-sk": {
+      "S": "sensor#s-1"
+    },
+    "_type": {
+      "S": "Sensor"
+    },
+    "GSI1-sk": {
+      "S": "sensor#s-1"
+    },
+    "GSI2-pk": {
+      "S": "floor#f-1"
+    },
+    "GSI3-pk": {
+      "S": "room#r-1"
+    },
+    "GSI1-pk": {
+      "S": "building#b-1"
+    },
+    "roomId": {
+      "S": "r-1"
+    },
+    "buildingId": {
+      "S": "b-1"
+    },
+    "floorId": {
+      "S": "f-1"
+    },
+    "GSI3-sk": {
+      "S": "sensor#s-1"
+    },
+    "sensorType": {
+      "S": "temperature"
+    },
+    "sk": {
+      "S": "info"
+    },
+    "pk": {
+      "S": "sensor#s-1"
+    },
+    "id": {
+      "S": "s-1"
+    }
+  },
+  {
+    "entityType": {
+      "S": "Floor"
+    },
+    "sk": {
+      "S": "floor#f-1"
+    },
+    "floorNumber": {
+      "N": "1"
+    },
+    "_type": {
+      "S": "Floor"
+    },
+    "pk": {
+      "S": "building#b-1"
+    },
+    "id": {
+      "S": "f-1"
+    },
+    "buildingId": {
+      "S": "b-1"
+    }
+  },
+  {
+    "entityType": {
+      "S": "Floor"
+    },
+    "sk": {
+      "S": "floor#f-2"
+    },
+    "floorNumber": {
+      "N": "2"
+    },
+    "_type": {
+      "S": "Floor"
+    },
+    "pk": {
+      "S": "building#b-1"
+    },
+    "id": {
+      "S": "f-2"
+    },
+    "buildingId": {
+      "S": "b-1"
+    }
+  },
+  {
+    "floorId": {
+      "S": "f-1"
+    },
+    "entityType": {
+      "S": "Room"
+    },
+    "sk": {
+      "S": "floor@f-1@room#r-1"
+    },
+    "name": {
+      "S": "Server room"
+    },
+    "_type": {
+      "S": "Room"
+    },
+    "pk": {
+      "S": "building#b-1"
+    },
+    "id": {
+      "S": "r-1"
+    },
+    "buildingId": {
+      "S": "b-1"
+    }
+  },
+  {
+    "floorId": {
+      "S": "f-2"
+    },
+    "entityType": {
+      "S": "Room"
+    },
+    "sk": {
+      "S": "floor@f-2@room#r-2"
+    },
+    "name": {
+      "S": "Kitchen"
+    },
+    "_type": {
+      "S": "Room"
+    },
+    "pk": {
+      "S": "building#b-1"
+    },
+    "id": {
+      "S": "r-2"
+    },
+    "buildingId": {
+      "S": "b-1"
+    }
+  },
+  {
+    "address": {
+      "S": "Aktau, Kazakhstan"
+    },
+    "entityType": {
+      "S": "Building"
+    },
+    "sk": {
+      "S": "info"
+    },
+    "name": {
+      "S": "Discovery"
+    },
+    "_type": {
+      "S": "Building"
+    },
+    "pk": {
+      "S": "building#b-1"
+    },
+    "id": {
+      "S": "b-1"
+    },
+    "yearBuilt": {
+      "N": "1997"
+    }
+  }
+]

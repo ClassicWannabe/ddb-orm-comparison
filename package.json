@@ -1,0 +1,45 @@
+{
+  "name": "ddb-orm-comparison",
+  "version": "1.0.0",
+  "description": "Comparison between popular DDB ORMs",
+  "main": "index.ts",
+  "scripts": {
+    "db:local": "sudo docker-compose up",
+    "init:sdk": "ts-node src/sdk/index.ts",
+    "init:dynamodb-toolbox": "ts-node src/dynamodb-toolbox/index.ts",
+    "init:dynamoose": "ts-node src/dynamoose/index.ts",
+    "init:typedorm": "ts-node src/typedorm/index.ts",
+    "init:electrodb": "ts-node src/electrodb/index.ts",
+    "init:dynamodb-onetable": "ts-node src/dynamodb-onetable/index.ts"
+  },
+  "keywords": [
+    "orm",
+    "dynamodb",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Ruslan Yeleussinov",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.418.0",
+    "@aws-sdk/lib-dynamodb": "^3.418.0",
+    "@typedorm/common": "^1.15.4",
+    "@typedorm/core": "^1.15.4",
+    "dynamodb-onetable": "^2.7.1",
+    "dynamodb-toolbox": "^0.8.5",
+    "dynamoose": "^3.2.1",
+    "electrodb": "^2.10.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": "< 3.0.0",
+    "node": ">= 18.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "@types/node": "^20.6.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

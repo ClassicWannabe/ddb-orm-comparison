@@ -1,0 +1,287 @@
+{
+  "buildingInfo": {
+    "Item": {
+      "created": "2023-10-11T18:59:40.630Z",
+      "address": "Aktau, Kazakhstan",
+      "entityType": "Building",
+      "modified": "2023-10-11T18:59:40.630Z",
+      "sk": "info",
+      "name": "Discovery",
+      "pk": "b-1",
+      "yearBuilt": 1997,
+      "entity": "Building"
+    },
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "046cd69e-60b7-412d-84cf-b3a3585aa08a",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    }
+  },
+  "buildingFloors": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "2c45630e-396e-4024-906e-61e7adc27e5d",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 2,
+    "Items": [
+      {
+        "created": "2023-10-11T18:59:40.652Z",
+        "entityType": "Floor",
+        "modified": "2023-10-11T18:59:40.652Z",
+        "sk": "f-1",
+        "floorNumber": 1,
+        "pk": "b-1",
+        "entity": "Floor"
+      },
+      {
+        "created": "2023-10-11T18:59:40.652Z",
+        "entityType": "Floor",
+        "modified": "2023-10-11T18:59:40.652Z",
+        "sk": "f-2",
+        "floorNumber": 2,
+        "pk": "b-1",
+        "entity": "Floor"
+      }
+    ],
+    "ScannedCount": 2
+  },
+  "floorRooms": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "ff6fdcb5-0c57-4151-9563-ec9cc4c185a8",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 1,
+    "Items": [
+      {
+        "created": "2023-10-11T18:59:40.677Z",
+        "entityType": "Room",
+        "modified": "2023-10-11T18:59:40.677Z",
+        "sk": {
+          "roomId": "r-1",
+          "floorId": "f-1"
+        },
+        "name": "Server room",
+        "pk": "b-1",
+        "entity": "Room"
+      }
+    ],
+    "ScannedCount": 1
+  },
+  "buildingSensors": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "2c52d2e8-faf7-4b78-9f71-68ed8f716808",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 3,
+    "Items": [
+      {
+        "unitOfMeasure": "celsius",
+        "entityType": "Sensor",
+        "sensorId2": "s-1",
+        "sensorId1": "s-1",
+        "floorId": "f-1",
+        "roomId": "r-1",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.701Z",
+        "sensorId3": "s-1",
+        "modified": "2023-10-11T18:59:40.701Z",
+        "sensorType": "temperature",
+        "sk": "info",
+        "pk": "s-1"
+      },
+      {
+        "unitOfMeasure": "celsius",
+        "entityType": "Sensor",
+        "sensorId2": "s-2",
+        "sensorId1": "s-2",
+        "floorId": "f-2",
+        "roomId": "r-2",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.701Z",
+        "sensorId3": "s-2",
+        "modified": "2023-10-11T18:59:40.701Z",
+        "sensorType": "temperature",
+        "sk": "info",
+        "pk": "s-2"
+      },
+      {
+        "unitOfMeasure": "millibar",
+        "entityType": "Sensor",
+        "sensorId2": "s-3",
+        "sensorId1": "s-3",
+        "floorId": "f-1",
+        "roomId": "r-1",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.725Z",
+        "sensorId3": "s-3",
+        "modified": "2023-10-11T18:59:40.725Z",
+        "sensorType": "pressure",
+        "sk": "info",
+        "pk": "s-3"
+      }
+    ],
+    "ScannedCount": 3
+  },
+  "floorSensors": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "3636c66e-16d0-4e3d-a6a5-e436a0cd24df",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 2,
+    "Items": [
+      {
+        "unitOfMeasure": "celsius",
+        "entityType": "Sensor",
+        "sensorId2": "s-1",
+        "sensorId1": "s-1",
+        "floorId": "f-1",
+        "roomId": "r-1",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.701Z",
+        "sensorId3": "s-1",
+        "modified": "2023-10-11T18:59:40.701Z",
+        "sensorType": "temperature",
+        "sk": "info",
+        "pk": "s-1"
+      },
+      {
+        "unitOfMeasure": "millibar",
+        "entityType": "Sensor",
+        "sensorId2": "s-3",
+        "sensorId1": "s-3",
+        "floorId": "f-1",
+        "roomId": "r-1",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.725Z",
+        "sensorId3": "s-3",
+        "modified": "2023-10-11T18:59:40.725Z",
+        "sensorType": "pressure",
+        "sk": "info",
+        "pk": "s-3"
+      }
+    ],
+    "ScannedCount": 2
+  },
+  "roomSensors": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "638b062f-474f-4486-93f0-bcfc73443d2a",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 2,
+    "Items": [
+      {
+        "unitOfMeasure": "celsius",
+        "entityType": "Sensor",
+        "sensorId2": "s-1",
+        "sensorId1": "s-1",
+        "floorId": "f-1",
+        "roomId": "r-1",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.701Z",
+        "sensorId3": "s-1",
+        "modified": "2023-10-11T18:59:40.701Z",
+        "sensorType": "temperature",
+        "sk": "info",
+        "pk": "s-1"
+      },
+      {
+        "unitOfMeasure": "millibar",
+        "entityType": "Sensor",
+        "sensorId2": "s-3",
+        "sensorId1": "s-3",
+        "floorId": "f-1",
+        "roomId": "r-1",
+        "buildingId": "b-1",
+        "entity": "Sensor",
+        "created": "2023-10-11T18:59:40.725Z",
+        "sensorId3": "s-3",
+        "modified": "2023-10-11T18:59:40.725Z",
+        "sensorType": "pressure",
+        "sk": "info",
+        "pk": "s-3"
+      }
+    ],
+    "ScannedCount": 2
+  },
+  "entityItems": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "3e2cd3e5-7e75-49d8-9dc5-f008a8ccf523",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 2,
+    "Items": [
+      {
+        "created": "2023-10-11T18:59:40.677Z",
+        "entityType": "Room",
+        "modified": "2023-10-11T18:59:40.677Z",
+        "sk": {
+          "roomId": "r-1",
+          "floorId": "f-1"
+        },
+        "name": "Server room",
+        "pk": "b-1",
+        "entity": "Room"
+      },
+      {
+        "created": "2023-10-11T18:59:40.677Z",
+        "entityType": "Room",
+        "modified": "2023-10-11T18:59:40.677Z",
+        "sk": {
+          "roomId": "r-2",
+          "floorId": "f-2"
+        },
+        "name": "Kitchen",
+        "pk": "b-1",
+        "entity": "Room"
+      }
+    ],
+    "ScannedCount": 2
+  },
+  "latestSensorMeasurement": {
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "c4928a5f-57bd-431d-b762-b93c56ac6d2f",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "Count": 1,
+    "Items": [
+      {
+        "created": "2023-10-11T18:59:40.751Z",
+        "entityType": "Measurement",
+        "modified": "2023-10-11T18:59:40.751Z",
+        "sk": "23:31:00",
+        "pk": {
+          "date": "2023-09-25",
+          "sensorId": "s-1"
+        },
+        "value": 23,
+        "entity": "Measurement"
+      }
+    ],
+    "LastEvaluatedKey": {
+      "sk": "time#23:31:00",
+      "pk": "sensor#s-1#measurement#2023-09-25"
+    },
+    "ScannedCount": 1
+  }
+}

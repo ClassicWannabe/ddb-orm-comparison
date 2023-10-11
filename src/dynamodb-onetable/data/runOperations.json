@@ -1,0 +1,106 @@
+{
+  "buildingFloors": [
+    {
+      "id": "f-1",
+      "buildingId": "b-1",
+      "floorNumber": 1
+    },
+    {
+      "id": "f-2",
+      "buildingId": "b-1",
+      "floorNumber": 2
+    }
+  ],
+  "floorRooms": [
+    {
+      "id": "r-1",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "name": "Server room"
+    }
+  ],
+  "buildingSensors": [
+    {
+      "id": "s-1",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "roomId": "r-1",
+      "sensorType": "temperature",
+      "unitOfMeasure": "celsius"
+    },
+    {
+      "id": "s-2",
+      "buildingId": "b-1",
+      "floorId": "f-2",
+      "roomId": "r-2",
+      "sensorType": "temperature",
+      "unitOfMeasure": "celsius"
+    },
+    {
+      "id": "s-3",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "roomId": "r-1",
+      "sensorType": "pressure",
+      "unitOfMeasure": "millibar"
+    }
+  ],
+  "floorSensors": [
+    {
+      "id": "s-1",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "roomId": "r-1",
+      "sensorType": "temperature",
+      "unitOfMeasure": "celsius"
+    },
+    {
+      "id": "s-3",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "roomId": "r-1",
+      "sensorType": "pressure",
+      "unitOfMeasure": "millibar"
+    }
+  ],
+  "roomSensors": [
+    {
+      "id": "s-1",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "roomId": "r-1",
+      "sensorType": "temperature",
+      "unitOfMeasure": "celsius"
+    },
+    {
+      "id": "s-3",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "roomId": "r-1",
+      "sensorType": "pressure",
+      "unitOfMeasure": "millibar"
+    }
+  ],
+  "entityItems": [
+    {
+      "id": "r-1",
+      "buildingId": "b-1",
+      "floorId": "f-1",
+      "name": "Server room"
+    },
+    {
+      "id": "r-2",
+      "buildingId": "b-1",
+      "floorId": "f-2",
+      "name": "Kitchen"
+    }
+  ],
+  "latestSensorMeasurement": [
+    {
+      "sensorId": "s-1",
+      "date": "2023-09-25",
+      "time": "23:31:00",
+      "value": 23
+    }
+  ]
+}

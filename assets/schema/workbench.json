@@ -1,0 +1,390 @@
+{
+  "ModelName": "IoT",
+  "ModelMetadata": {
+    "Author": "Ruslan Yeleussinov",
+    "DateCreated": "Sep 22, 2023, 12:34 AM",
+    "DateLastModified": "Sep 27, 2023, 01:11 AM",
+    "Description": "",
+    "AWSService": "Amazon DynamoDB",
+    "Version": "3.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "sensor-management",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "pk",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "sk",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "entityType",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI1-pk",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI1-sk",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI2-pk",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI2-sk",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI3-pk",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI3-sk",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "value",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "address",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "floorNumber",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "unitOfMeasure",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "sensorType",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "yearBuilt",
+          "AttributeType": "N"
+        }
+      ],
+      "GlobalSecondaryIndexes": [
+        {
+          "IndexName": "GSI1",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI1-pk",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI1-sk",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI2",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI2-pk",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI2-sk",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI3",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI3-pk",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI3-sk",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI4",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "entityType",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        }
+      ],
+      "TableData": [
+        {
+          "pk": {
+            "S": "sensor#s-1"
+          },
+          "sk": {
+            "S": "info"
+          },
+          "entityType": {
+            "S": "Sensor"
+          },
+          "GSI1-pk": {
+            "S": "building#b-1"
+          },
+          "GSI1-sk": {
+            "S": "sensor#s-1"
+          },
+          "GSI2-pk": {
+            "S": "floor#f-1"
+          },
+          "GSI2-sk": {
+            "S": "sensor#s-1"
+          },
+          "GSI3-pk": {
+            "S": "room#r-1"
+          },
+          "GSI3-sk": {
+            "S": "sensor#s-1"
+          },
+          "unitOfMeasure": {
+            "S": "celsius"
+          },
+          "sensorType": {
+            "S": "temperature"
+          }
+        },
+        {
+          "pk": {
+            "S": "building#b-1"
+          },
+          "sk": {
+            "S": "info"
+          },
+          "entityType": {
+            "S": "Building"
+          },
+          "address": {
+            "S": "Aktau, Kazakhstan"
+          },
+          "name": {
+            "S": "Discovery"
+          },
+          "yearBuilt": {
+            "N": "1997"
+          }
+        },
+        {
+          "pk": {
+            "S": "building#b-1"
+          },
+          "sk": {
+            "S": "floor#f-1"
+          },
+          "entityType": {
+            "S": "Floor"
+          },
+          "floorNumber": {
+            "N": "1"
+          }
+        },
+        {
+          "pk": {
+            "S": "building#b-1"
+          },
+          "sk": {
+            "S": "floor@f-1@room#r-1"
+          },
+          "entityType": {
+            "S": "Room"
+          },
+          "value": {
+            "N": "999"
+          },
+          "name": {
+            "S": "Server room"
+          }
+        },
+        {
+          "pk": {
+            "S": "sensor#s-2"
+          },
+          "sk": {
+            "S": "info"
+          },
+          "entityType": {
+            "S": "Sensor"
+          },
+          "GSI1-pk": {
+            "S": "building#b-1"
+          },
+          "GSI1-sk": {
+            "S": "sensor#s-2"
+          },
+          "GSI2-pk": {
+            "S": "floor#f-2"
+          },
+          "GSI2-sk": {
+            "S": "sensor#s-2"
+          },
+          "GSI3-pk": {
+            "S": "room#r-2"
+          },
+          "GSI3-sk": {
+            "S": "sensor#s-2"
+          },
+          "unitOfMeasure": {
+            "S": "celsius"
+          },
+          "sensorType": {
+            "S": "temperature"
+          }
+        },
+        {
+          "pk": {
+            "S": "building#b-1"
+          },
+          "sk": {
+            "S": "floor#f-2"
+          },
+          "entityType": {
+            "S": "Floor"
+          },
+          "floorNumber": {
+            "N": "2"
+          }
+        },
+        {
+          "pk": {
+            "S": "building#b-1"
+          },
+          "sk": {
+            "S": "floor@f-2@room#r-2"
+          },
+          "entityType": {
+            "S": "Room"
+          },
+          "name": {
+            "S": "Kitchen"
+          }
+        },
+        {
+          "pk": {
+            "S": "sensor#s-3"
+          },
+          "sk": {
+            "S": "info"
+          },
+          "entityType": {
+            "S": "Sensor"
+          },
+          "GSI1-pk": {
+            "S": "building#b-1"
+          },
+          "GSI1-sk": {
+            "S": "sensor#s-3"
+          },
+          "GSI2-pk": {
+            "S": "floor#f-1"
+          },
+          "GSI2-sk": {
+            "S": "sensor#s-3"
+          },
+          "GSI3-pk": {
+            "S": "room#r-1"
+          },
+          "GSI3-sk": {
+            "S": "sensor#s-3"
+          },
+          "unitOfMeasure": {
+            "S": "millibar"
+          },
+          "sensorType": {
+            "S": "pressure"
+          }
+        },
+        {
+          "pk": {
+            "S": "sensor#s-1#measurement#2023-09-25"
+          },
+          "sk": {
+            "S": "time#23:30:00"
+          },
+          "entityType": {
+            "S": "Measurement"
+          },
+          "value": {
+            "N": "25"
+          }
+        },
+        {
+          "pk": {
+            "S": "sensor#s-1#measurement#2023-09-25"
+          },
+          "sk": {
+            "S": "time#23:31:00"
+          },
+          "entityType": {
+            "S": "Measurement"
+          },
+          "value": {
+            "N": "23"
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      },
+      "BillingMode": "PROVISIONED",
+      "ProvisionedCapacitySettings": {
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5
+        },
+        "AutoScalingRead": {
+          "ScalableTargetRequest": {
+            "MinCapacity": 1,
+            "MaxCapacity": 10,
+            "ServiceRole": "AWSServiceRoleForApplicationAutoScaling_DynamoDBTable"
+          },
+          "ScalingPolicyConfiguration": {
+            "TargetValue": 70
+          }
+        },
+        "AutoScalingWrite": {
+          "ScalableTargetRequest": {
+            "MinCapacity": 1,
+            "MaxCapacity": 10,
+            "ServiceRole": "AWSServiceRoleForApplicationAutoScaling_DynamoDBTable"
+          },
+          "ScalingPolicyConfiguration": {
+            "TargetValue": 70
+          }
+        }
+      }
+    }
+  ]
+}
