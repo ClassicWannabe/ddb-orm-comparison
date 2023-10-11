@@ -1,11 +1,6 @@
 import fs from "fs";
 
-import {
-  ENTITY_HIERARCHY,
-  EntityType,
-  INITIAL_DATA_FILE_NAME,
-} from "../../constants";
-import { Building, Floor, Measurement, Room, Sensor } from "../entities";
+import { ENTITY_HIERARCHY, INITIAL_DATA_FILE_NAME } from "../../constants";
 import { table } from "../table";
 
 export const populate = async () => {

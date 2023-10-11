@@ -1,12 +1,8 @@
 import fs from "fs";
 
-import {
-  ENTITY_HIERARCHY,
-  EntityType,
-  INITIAL_DATA_FILE_NAME,
-} from "../../constants";
+import { ENTITY_HIERARCHY, INITIAL_DATA_FILE_NAME } from "../../constants";
 import { Building, Floor, Room, Sensor, Measurement } from "../entities";
-import { entityManager, scanManager, table } from "../table";
+import { entityManager, scanManager } from "../table";
 
 export const populate = async () => {
   await createBuildings();

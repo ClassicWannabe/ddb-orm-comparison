@@ -4,7 +4,7 @@ export * from "./room";
 export * from "./sensor";
 export * from "./measurement";
 
-import { EntityType, GSI, GSI_MAP } from "../../constants";
+import { GSI, GSI_MAP } from "../../constants";
 import { Building } from "./building";
 import { Floor } from "./floor";
 import { Measurement } from "./measurement";

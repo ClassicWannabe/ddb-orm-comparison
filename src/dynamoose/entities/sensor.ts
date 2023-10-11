@@ -1,7 +1,6 @@
 import dynamoose from "dynamoose";
 import { Item } from "dynamoose/dist/Item";
 
-import { table } from "../table";
 import {
   EntityType,
   GSI,

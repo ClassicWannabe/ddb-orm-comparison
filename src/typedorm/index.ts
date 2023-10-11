@@ -31,9 +31,9 @@ const main = async () => {
 
   // Next queries produce errors because of a bug. See the queries' contents
   try {
-    const buildingSensors = await getBuildingSensors(building.id);
-    const floorSensors = await getFloorSensors(building.floors[0].id);
-    const roomSensors = await getRoomSensors(building.floors[0].rooms[0].id);
+    await getBuildingSensors(building.id);
+    await getFloorSensors(building.floors[0].id);
+    await getRoomSensors(building.floors[0].rooms[0].id);
   } catch (error) {
     console.log(error);
   }
