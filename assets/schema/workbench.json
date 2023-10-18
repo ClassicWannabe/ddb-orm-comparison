@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Ruslan Yeleussinov",
     "DateCreated": "Sep 22, 2023, 12:34 AM",
-    "DateLastModified": "Sep 27, 2023, 01:11 AM",
+    "DateLastModified": "Oct 18, 2023, 12:58 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -220,9 +220,6 @@
           },
           "entityType": {
             "S": "Room"
-          },
-          "value": {
-            "N": "999"
           },
           "name": {
             "S": "Server room"
